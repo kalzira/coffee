@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+/*body{*/
+    /*margin: 3%;*/
+
+/*}*/
+html, body{
+
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.card-img-top {
+    overflow:hidden;
+    width: 380px;
+    height:250px;
+}
+.card-img-top img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.card-img-top img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*1rem-16px*/
+.navbar{
+    padding: .8rem;
+}
+.navbar-nav li{
+    padding-right: 20px;
+}
+.nav-link{
+    font-size: 1.1em !important;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.jumbotron{
+    padding: 1rem;
+    border-radius: 0;
+}
+.padding{
+    padding-bottom: 2rem;
+}
+.welcome{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.welcome hr{
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+/*#cards{*/
+    /*background-repeat: repeat;*/
+    /*background-image: url("img/pexels-photo.jpg");*/
+    /*background-size: 50%;*/
+/*}*/
+
+@media only screen and (max-width: 768px) {
+    .hiddde {
+        display: none;
+    }
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+
+}
+/*--- Fixed Background Image --*/
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#fixed {
+    background-image: url('img/1002038_602552286459832_2087663967_n.jpg');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+#text{
+    /*background-color: #C08382;*/
+    float:right;}
+.card-img-top-1{
+   width:90%;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+
+#carouselka{
+    float: left;
+}
+#welcome{
+    display: inline-block;
+}
+.card{
+    margin-left: 3.5%;
+    margin-bottom: 3%;
+
+}
+.row jumbotron{
+    background-color: rgba(75,51,51, 0.2);
+}
+footer{
+    background-color: #68212E;
+    color: white;
+    padding-top: 2rem;
+}
+hr.light{
+    border-top: 1px  solid white;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+
+}
+footer a{
+    color: white;
+}
+hr.light-100{
+    border-top: 1px  solid white;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+.imgSocial{
+    text-align: center;
+    width: 3%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
