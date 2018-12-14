@@ -9,23 +9,25 @@ html, body{
     color: #222;
 }
 
-.card-img-top {
-    overflow:hidden;
-    width: 380px;
-    height:250px;
-}
-.card-img-top img {
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
 
-.card-img-top img:hover{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
 
+/*.b-popup{*/
+    /*width:100%;*/
+    /*min-height:100%;*/
+    /*background-color: rgba(0,0,0,0.5);*/
+    /*overflow:hidden;*/
+    /*position:fixed;*/
+    /*bottom:0;*/
+/*}*/
+/*.b-popup .b-popup-content{*/
+    /*!*margin:40px auto 0px auto;*!*/
+    /*!*width:100px;*!*/
+    /*!*height: 40px;*!*/
+    /*!*padding:10px;*!*/
+    /*background-color: #c5c5c5;*/
+    /*border-radius:5px;*/
+    /*box-shadow: 0 0 10px #000;*/
+/*}*/
 /*1rem-16px*/
 .navbar{
     padding: .8rem;
@@ -45,7 +47,8 @@ html, body{
     border-radius: 0;
 }
 .padding{
-    padding-bottom: 2rem;
+    /*padding-bottom: 2rem;*/
+    padding: 3%;
 }
 .welcome{
     width: 75%;
@@ -72,6 +75,7 @@ html, body{
 }
 
 
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
@@ -93,6 +97,8 @@ html, body{
     backface-visibility: visible;
 
 }
+
+
 /*--- Fixed Background Image --*/
 figure {
     position: relative;
@@ -123,9 +129,9 @@ figure {
     will-change: transform;
 }
 /*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
+/*[class*="col-"] {*/
+    /*padding: 1rem;*/
+/*}*/
 
 #text{
     /*background-color: #C08382;*/
@@ -137,9 +143,11 @@ figure {
 }
 
 
-#carouselka{
+#carouselka, #carouselkas{
     float: left;
 }
+
+
 #welcome{
     display: inline-block;
 }
