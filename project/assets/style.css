@@ -1,36 +1,95 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Satisfy');
 /*body{*/
     /*margin: 3%;*/
 
 /*}*/
-html, body{
+ body{
 
-    font-family: 'Poppins', sans-serif;
-    color: #222;
+    font-family: 'Roboto Mono', monospace;
+     color: #222;
 }
 
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    background:url("../img/panel_wakeup_bg.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: darkred;
 
+}
+/*.caption  h2{*/
+    /*font-size: 2rem;*/
+    /*font-weight: 100;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: .1rem;*/
+    /*!*text-shadow: .1rem .1rem .8rem darkred;*!*/
+    /*padding-bottom: 1rem;*/
+    /*padding-top: 5rem;*/
+/*}*/
+.caption  h3{
+    font-family: 'Satisfy', serif;
+    text-transform: none;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+    /*text-shadow: .1rem .1rem .5rem darkred;*/
 
-/*.b-popup{*/
-    /*width:100%;*/
-    /*min-height:100%;*/
-    /*background-color: rgba(0,0,0,0.5);*/
-    /*overflow:hidden;*/
-    /*position:fixed;*/
-    /*bottom:0;*/
-/*}*/
-/*.b-popup .b-popup-content{*/
-    /*!*margin:40px auto 0px auto;*!*/
-    /*!*width:100px;*!*/
-    /*!*height: 40px;*!*/
-    /*!*padding:10px;*!*/
-    /*background-color: #c5c5c5;*/
-    /*border-radius:5px;*/
-    /*box-shadow: 0 0 10px #000;*/
-/*}*/
-/*1rem-16px*/
+}
+/*WELCOME*/
+
+.container-fluid h1{
+    font-family: 'Satisfy', serif;
+}
+
+/*NAVBAR*/
+
 .navbar{
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,0.8)!important;
     padding: .8rem;
+    height: 3.5rem;
+}
+.navbar-brand img{
+    height: 3.5rem;
+}
+.navbar-brand{
+    font-family: 'Satisfy', serif;
+    font-size: 2rem;
 }
 .navbar-nav li{
     padding-right: 20px;
@@ -38,14 +97,36 @@ html, body{
 .nav-link{
     font-size: 1.1em !important;
 }
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:#523434;
+}
+
+/*LANDING*/
+/*.landing{*/
+    /*height: 550px;*/
+/*}*/
+
+
+
+
+
+
+/*SLIDER*/
 .carousel-inner img{
     width: 100%;
     height: 100%;
 }
-.jumbotron{
-    padding: 1rem;
-    border-radius: 0;
-}
+
+
+/*.jumbotron{*/
+    /*padding: 1rem;*/
+    /*border-radius: 0;*/
+/*}*/
 .padding{
     /*padding-bottom: 2rem;*/
     padding: 3%;
@@ -62,17 +143,13 @@ html, body{
     margin-bottom: 1rem;
 }
 
-/*#cards{*/
-    /*background-repeat: repeat;*/
-    /*background-image: url("img/pexels-photo.jpg");*/
-    /*background-size: 50%;*/
-/*}*/
 
-@media only screen and (max-width: 768px) {
-    .hiddde {
-        display: none;
-    }
-}
+
+/*@media only screen and (max-width: 768px) {*/
+    /*.hiddde {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
 
 
 
@@ -92,19 +169,58 @@ html, body{
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
 
 }
 
 
-/*--- Fixed Background Image --*/
-.figure {
+
+.fixed {
+    background: url("../img/locations.jpg")no-repeat fixed center center;
+    z-index: -1;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+
+
+}
+h3.heading{
+    font-size: 1.9rem;
+    font-weight:700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+    width: 3rem;
+    height: .2rem;
+    background-color: #0ab6c1;
+    margin:0 auto 2rem;
+}
+/*.dark{*/
+    /*background-color: rgba(0,0,0,0.75);*/
+    /*color: white;*/
+    /*padding: 7rem 2rem;*/
+/*}*/
+
+
+.fixed-background {
     position: relative;
     width: 100%;
-    height: 60%;
-    margin: 0!important;
+}
+.fixed-background h3{
+
+}
+.fixed-background p{
+
 }
 .fixed-wrap {
     clip: rect(0, auto, auto, 0);
@@ -113,21 +229,39 @@ html, body{
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -999!important;
 }
-#fixed {
-    background-image: url('../img/background6.jpg');
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    will-change: transform;
-}
+
+
+/*--- Fixed Background Image --*/
+/*.figure {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*height: 60%;*/
+    /*margin: 0!important;*/
+/*}*/
+/*.fixed-wrap {*/
+    /*clip: rect(0, auto, auto, 0);*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+/*#fixed {*/
+    /*background-image: url('../img/background6.jpg');*/
+    /*position: fixed;*/
+    /*display: block;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+    /*-webkit-transform: translateZ(0);*/
+    /*transform: translateZ(0);*/
+    /*will-change: transform;*/
+/*}*/
 /*--- Bootstrap Padding Fix --*/
 /*[class*="col-"] {*/
     /*padding: 1rem;*/
@@ -143,9 +277,9 @@ html, body{
 }
 
 
-#carouselka, #carouselkas{
-    float: left;
-}
+/*#carouselka, #carouselkas{*/
+    /*float: left;*/
+/*}*/
 
 
 #welcome{
@@ -156,9 +290,9 @@ html, body{
     margin-bottom: 3%;
 
 }
-.row jumbotron{
-    background-color: rgba(75,51,51, 0.2);
-}
+/*.row jumbotron{*/
+    /*background-color: rgba(75,51,51, 0.2);*/
+/*}*/
 footer{
     background-color: #523434;
     color: white;
