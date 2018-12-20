@@ -70,7 +70,7 @@
 /*}*/
 /*WELCOME*/
 
-.container-fluid h1{
+.container-fluid h1, .titleHead{
     font-family: 'Satisfy', serif;
 }
 
@@ -123,7 +123,7 @@
 .showcase {
     grid-area: showcase;
     min-height: 400px;
-    grid-gap: 0px;
+    grid-gap: 0;
     background: url(../img/photo-1527957557037-d079c24f24be.png)no-repeat center center;
     background-size: cover;
     padding: 3rem;
@@ -143,7 +143,7 @@
 .showcase p {
     font-size: 1.3rem;
     margin-top: 0;
-    grid-gap: 0px;
+    grid-gap: 0;
     /*color: var(--light);*/
 }
 
@@ -168,12 +168,12 @@
     grid-area: top-box-a;
     background: url(../img/minimal-coffee-mug-mockup-psd.jpg)center;
     background-size: cover;
-    grid-gap: 0px;
+    grid-gap: 0;
 }
 
 .top-box-b {
     grid-area: top-box-b;
-    grid-gap: 0px;
+    grid-gap: 0;
     background: url(../img/cupofcofred.png) center;
     background-size: cover;
 
@@ -183,7 +183,7 @@
 /* Boxes */
 .boxes {
     display: grid;
-    grid-gap: 0px;
+    grid-gap: 0;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
@@ -406,6 +406,70 @@
     margin-bottom: 3%;
 
 }
+
+/*Categories*/
+#ByKitchenAmerican, #ByKitchenItalian, #ByPriceConservative, #ByPriceMedium, #ByPriceHigh, #ByPopularity{
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin-bottom: 1.5%;
+}
+#ByKitchenAmerican, #ByKitchenItalian{
+    background-color: rgba(233,75,53, 0.9);
+    width: 80%;
+
+}
+
+#ByPriceConservative, #ByPriceMedium, #ByPriceHigh {
+    background-color:  rgba(122,158,109, 0.9);
+    width: 90%;
+}
+#ByPopularity{
+    background-color: rgba(41,136,155, 0.9);
+    width: 80%;
+}
+
+#ShowAll{
+    width: 70%;
+    background-color: #ECEAEF;
+    border: none;
+}
+
+
+
+
+
+
+/*Coffee effect on us*/
+.fancy-collapse-panel .panel-default > .panel-heading {
+    padding: 0;
+
+}
+.fancy-collapse-panel .panel-heading a {
+    padding: 12px 35px 12px 15px;
+    display: inline-block;
+    width: 100%;
+    background-color: #EE556C;
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+}
+.fancy-collapse-panel .panel-heading a:after {
+    font-family: "FontAwesome";
+    content: "\f147";
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    top: 50%;
+    line-height: 1;
+    margin-top: -10px;
+}
+
+.fancy-collapse-panel .panel-heading a.collapsed:after {
+    content: "\f196";
+}
+
 /*.row jumbotron{*/
     /*background-color: rgba(75,51,51, 0.2);*/
 /*}*/

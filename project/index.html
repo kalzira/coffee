@@ -4,14 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Coffee World</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/mainIcon2.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>-->
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="content-filter-master/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="content-filter-master/css/style.css"> <!-- Resource style -->
+    <script src="content-filter-master/js/modernizr.js"></script>
     <link href="assets/style.css" rel="stylesheet">
     <link href="assets/hover.css" rel="stylesheet">
     <link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
@@ -23,7 +27,7 @@
 <div class="container-fluid">
 <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
 
-    <a class="navbar-brand" href="#"> Coffee World</a>
+    <a class="navbar-brand" href="#"> Coffee W</a><img src="img/mainIcon2.png"><a class="navbar-brand" href="#">rld</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
     </button>
@@ -61,6 +65,7 @@
 </nav>
 </div>
 
+<div class="container-fluid">
 <section class="top-container">
     <header class="showcase">
         <h2>Welcome to</h2>
@@ -82,27 +87,27 @@
 <!-- Boxes Section -->
 <section class="boxes">
     <div id="box-1">
-        <i class="fas fa-chart-pie fa-4x"></i>
-        <h3>Analytics</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+
+        <h3>Effect</h3>
+
     </div>
     <div id="box-2">
-        <i class="fas fa-globe fa-4x"></i>
-        <h3>Marketing</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+
+        <h3>Facts</h3>
+
     </div>
     <div id="box-3">
-        <i class="fas fa-cog fa-4x"></i>
-        <h3>Development</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+
+        <h3>History</h3>
+
     </div>
     <div id="box-4">
-        <i class="fas fa-users fa-4x"></i>
-        <h3>Support</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+
+        <h3>Quiz</h3>
+
     </div>
 </section>
-
+</div>
 
 <!--Landing-->
 <!--<div class="landing">-->
@@ -201,6 +206,8 @@
 <!--</div>-->
 <!--</div>-->
 <!--</div>-->
+
+
 <!--- Welcome Section -->
 <div class="container-fluid padding" id="welcome">
     <div class="row welcome text-center">
@@ -222,9 +229,57 @@
         </div>
     </div>
 </div>
+<!---End  Welcome Section -->
+
+
+
+
+
+<!--Categories-->
+
+<!-- Control buttons -->
+
+
+
+
+<div class="container-fluid padding">
+    <div class="row text-center">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <h4 class="titleHead">By kitchen</h4>
+
+                    <a class="btn btn-outline-secondary btn-sm" id="ByKitchenItalian" >Italian</a>
+
+                    <a class="btn btn-outline-secondary btn-sm" id="ByKitchenAmerican">American</a>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h4 class="titleHead">By price</h4>
+            <a class="btn btn-outline-secondary btn-sm" id="ByPriceConservative" >Conservative</a><br>
+            <a class="btn btn-outline-secondary btn-sm" id="ByPriceMedium" >Medium</a><br>
+            <a class="btn btn-outline-secondary btn-sm" id="ByPriceHigh" >High</a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <h4 class="titleHead">Raiting</h4>
+            <a class="btn btn-outline-secondary btn-sm" id="ByPopularity">By popularity</a>
+        </div>
+    </div>
+
+    <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <a class="btn btn-outline-secondary btn-sm active" id="ShowAll">Show All</a>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+<!--End Categories-->
 
 
 <!--- Cards Section -->
+   
 <div class="container-fluid padding">
     <div class="row">
 
@@ -247,15 +302,16 @@
                     <a href="img/menu/bellagio8.jpg" data-lightbox="roadtrip" ></a>
 
                 </div>
-            </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
         </div>
+            
+        </div>
+
         <div class="col-md-3 col-sm-4 text-center">
 
             <div class="card" >
                 <img class="card-img-top" src="img/logo/Vanilla.jpg" alt="Vanilla Sky">
                 <div class="card-body">
-
 
                     <!--menu-->
 
@@ -269,16 +325,16 @@
                     <a href="img/menu/vanillasky8.jpg" data-lightbox="roadtrip" ></a>
                     <a href="img/menu/vanillasky9.jpg" data-lightbox="roadtrip" ></a>
 
-                </div>
+
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+            </div>
+            
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
             <div class="card" >
                 <img class="card-img-top" src="img/logo/YaBoobl.png" alt="Ya Booblik">
                 <div class="card-body">
-
 
                     <!--menu-->
 
@@ -295,14 +351,14 @@
                     <a href="img/menu/booblik11.jpeg" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
-        </div>
+            </div>
+            
+
         <div class="col-md-3 col-sm-4 text-center">
 
             <div class="card" >
                 <img class="card-img-top-1" src="img/logo/Pierre.png" alt="Pierre Coffee">
                 <div class="card-body">
-
 
                     <a href="img/menu/pierre.png" data-lightbox="roadtrip" class="btn btn-outline-secondary btn-sm">Menu</a>
                     <a href="img/menu/pierre2.png" data-lightbox="roadtrip" ></a>
@@ -310,11 +366,10 @@
 
 
 
-
-
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
@@ -330,7 +385,8 @@
 
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
@@ -356,7 +412,8 @@
 
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
@@ -383,7 +440,8 @@
                     <a href="img/menu/relax16.jpg" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
@@ -396,8 +454,9 @@
                     <a href="img/menu/adrianno3.png" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
-        </div>
+            </div>
+
+
     </div>
 </div>
 <!--</div>-->
@@ -416,7 +475,7 @@
                     <a href="img/menu/sierra5.JPG" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
@@ -435,7 +494,8 @@
                     <a href="img/menu/travellers9.jpg" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
@@ -454,7 +514,8 @@
 
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
@@ -469,7 +530,8 @@
                     <a href="img/menu/conference5.png" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
 
@@ -488,8 +550,9 @@
                     <a href="img/menu/cofe9.jpg" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
-        </div>
+            </div>
+
+
         <div class="col-md-3 col-sm-4 text-center">
 
             <div class="card" >
@@ -506,9 +569,11 @@
                     <a href="img/menu/cofcaf8.png" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
+
             <div class="card" >
                 <img class="card-img-top-1" src="img/logo/Tavi.png" alt="Tavi">
                 <div class="card-body">
@@ -520,9 +585,11 @@
                     <a href="img/menu/tavi5.png" data-lightbox="roadtrip" ></a>
                 </div>
             </div>
-            <a class="btn btn-default" href="#">Read More →</a>
+
+
         </div>
         <div class="col-md-3 col-sm-4 text-center">
+
             <div class="card" >
                 <img class="card-img-top" src="img/logo/Panda.png" alt="Panda Coffee">
                 <div class="card-body">
@@ -539,26 +606,63 @@
 
                 </div>
             </div>
-            <a class="btn btn-default" href="#" style="color: green">Read More →</a>
+
+
         </div>
     </div>
 </div>
 
+
+<!--three column section-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+            <img src="img/historyOfCof.png">
+            <h3 class="titleHead">History of coffee</h3>
+            <video width="300" height="240" controls >
+                <source src="video/A_Brief_History_of_Coffee.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <img src="img/funFactsAboutCof.png">
+            <h3 class="titleHead">Facts about Coffee</h3>
+            <a href="img/factsAboutCof.png" data-lightbox="roadtrip" class="btn btn-outline-secondary btn-sm">Read</a><hr class='my-4'>
+            <a href="img/factsAboutCof2.png" data-lightbox="roadtrip" class="btn btn-outline-secondary btn-sm">Even More</a><hr class='my-4'>
+            <a href="img/factsAboutCof3.png" data-lightbox="roadtrip" class="btn btn-outline-secondary btn-sm">Old Facts, New Facts</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <img src="img/chooseYourCoff.png">
+            <h3 class="titleHead">Time for questions?</h3>
+            <p>Choose coffee house suits you best</p>
+            <p>Do not know where to go to have a cup of coffee? Don't worry! We will help you to choose place exactly for you.</p>
+
+            <a href="javascript:window.open('quiz.html','mypopuptitle','width=400,height=700')" class="btn btn-outline-secondary btn-sm" >Open Quiz</a>
+        </div>
+
+    </div>
+</div>
 <!--Two column section-->
 <div id="organism">
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-md-8">
             <h2>Coffee affects on organism</h2>
+            <p>Health research on coffee swings back and forth between good and bad news more frequently than almost any other topic.
+                When you hear about one study claiming health benefits while another harps on a list of negatives,
+                it’s easy to get jaded and stop paying attention. To bring some focus, here’s a summary of both good and bad effects of coffee from a selection of coffee studies.</p>
                 <div class="container">
-                <div class="panel-group" id="accordion">
+
+                    <div class="fancy-collapse-panel">
+
+                <div class="panel-group"  id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Positive</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Positive</a>
                             </h4>
                         </div>
-                        <div id="collapse1" class="panel-collapse collapse in">
+                        <div  id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body"><ul>
                                 <li>Raise your RMR - your resting metabolic rate is basically the rate at which you body burns fat while doing nothing.
                                     Caffeine can raise your RMR by 3–11% depending on the dosage. (American Journal of Clinical Nutrition)</li>
@@ -574,6 +678,8 @@
                             </ul></div>
                         </div>
                     </div>
+
+                </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -583,14 +689,13 @@
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Cortisol - Too much coffee can create an environment of excess acidity, and this triggers the hormone cortisol.
+                                        Cortisol stresses you out and impairs your ability to lose fat.</li>
+                                    <li>Diuretic - Caffeine makes you piss. This can cause dehydration and electrolyte loss.
+                                        While this is not a BAD thing - it can lead to complications if you dont properly hydrate habitually.</li>
+                                    <li>Caffeine Tolerance - Everyone knows that when you are taking drugs you need more and more to get the same effect as the last dose.
+                                        Make no mistake Caffeine is a drug and acts like all the others in this respect.</li>
                                 </ul>
-
 
                             </div>
                         </div>
@@ -598,13 +703,22 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Conclusion</a>
                             </h4>
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            <div class="panel-body">
+                                <h5>Many of these negative effects can be negated by simply:</h5>
+                                <ul>
+                                    <li>Not drinking too much - keep it under 500mgs of caffeine per day.
+                                        A cup of Arabica coffee( the good stuff) contains about 120mgs on average. Robusta coffee (think instant coffee) contains about 180mgs per cup on average.
+                                    </li>
+                                    <li>Cycling your coffee - abstain from coffee for one month out of every four
+                                    </li>
+                                    <li>Keep hydrated - keep an eye on the color of your pee
+                                    <h4>Keep in mind that this is only with black coffee! Adding tons of sugar and crazy stuff can do all sorts of terrible things to your body.</h4>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -620,98 +734,50 @@
 </div>
 
 
-<!--&lt;!&ndash;STARTRESOURSES&ndash;&gt;-->
-<!--<div id="resourses" class="offset">-->
-    <!--<div class="fixed-background">-->
-        <!--<div class="row dark text-center">-->
-            <!--<div class="col-12">-->
-                <!--<h3 class="heading">Locations</h3>-->
-                <!--<div class="heading-underline">-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-md-4">-->
-                <!--<h3>Facts</h3>-->
-                <!--<div class="feature">-->
-                    <!--<img src="img/icons/coffee-machine%20(3).png">-->
-                <!--</div>-->
-                <!--<p class="lead"> The drink dates back to 800 A.D.<br>-->
-                    <!--Coffee beans are technically seeds.<br>-->
-                    <!--And you can eat coffee cherries as a food.<br>-->
-                    <!--Espresso means "pressed out" in Italian.<br>-->
-                    <!--The world's most expensive coffee can cost more than $600 a pound.<br>-->
-                    <!--You can overdose on coffee.<br>-->
-                    <!--Coffee drinkers tend to live longer.<br>-->
-                    <!--The word "coffee" comes from the Arabic word for "wine."<br>-->
-                   <!--Starbucks opens an average of two stores per day.<br>-->
-                    <!--One cup of black coffee only has one calorie.<br>-->
-                    <!--Finland is home to the biggest coffee lovers.</p>-->
-            <!--</div>-->
-            <!--<div class="col-md-4">-->
-                <!--<h3>History</h3>-->
-                <!--<div class="feature">-->
-                    <!--<img src="img/icons/coffee-bag%20(1).png">-->
-                <!--</div>-->
-                <!--<p class="lead">The coffee plant is native to Ethiopia. According to legend coffee was discovered by an Ethiopian goat herd called Kaldi.-->
-                    <!--He noticed that goats who ate certain beans became very-->
-                    <!--lively. Coffee was drunk in Yemen by the 15th century. By the-->
-                    <!--16th century coffee had spread to Persia (Iran) and Turkey.-->
-                    <!--There were many coffee houses where people could drink and also socialize.-->
-                    <!--Coffee reached Europe in the late 16th century through trade.-->
-                    <!--Coffee was introduced into Italy first. (Today coffee is still a very popular drink among the Italians).-->
-                    <!--Coffee really became popular in Europe in the 17th century.-->
-                    <!--In the 1600s coffee houses opened across Europe.-->
-                    <!--The first coffee house in England opened in Oxford in 1651 and by the late 17th century-->
-                    <!--there were many coffeehouses in English towns where-->
-                    <!--merchants and professional men met to drink cups of coffee, read newspapers and chat</p>-->
-            <!--</div>-->
-            <!--<div class="col-md-4">-->
-                <!--<h3>Quiz</h3>-->
-                <!--<div class="feature">-->
-                    <!--<img src="img/icons/menu%20(1).png">-->
-                <!--</div>-->
-                <!--<p class="lead">The coffee plant is native to Ethiopia. According to legend coffee was discovered by an Ethiopian goat herd called Kaldi.-->
-                    <!--He noticed that goats who ate certain beans became very-->
-                    <!--lively. Coffee was drunk in Yemen by the 15th century. By the-->
-                    <!--16th century coffee had spread to Persia (Iran) and Turkey.-->
-                    <!--There were many coffee houses where people could drink and also socialize.-->
-                    <!--Coffee reached Europe in the late 16th century through trade.-->
-                    <!--Coffee was introduced into Italy first. (Today coffee is still a very popular drink among the Italians).-->
-                    <!--Coffee really became popular in Europe in the 17th century.-->
-                    <!--In the 1600s coffee houses opened across Europe.-->
-                    <!--The first coffee house in England opened in Oxford in 1651 and by the late 17th century-->
-                    <!--there were many coffeehouses in English towns where-->
-                    <!--merchants and professional men met to drink cups of coffee, read newspapers and chat</p>-->
-            <!--</div>-->
-
-
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
-
-
-
-
-     <!--&lt;!&ndash;&ndash;&gt;-->
-<!--<div class="figure">-->
-    <!--<div class="fixed-wrap">-->
-        <!--<div id="fixed">-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
-
-
-
-
-
-
 
 
 
 
 <!--- Cards -->
+<main class="cd-main-content">
+    <div class="cd-tab-filter-wrapper">
+        <div class="cd-tab-filter">
+            <ul class="cd-filters">
+                <li class="placeholder">
+                    <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+                </li>
+                <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Color 1</a></li>
+                <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
+                <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Color 3</a></li>
+            </ul> <!-- cd-filters -->
+        </div> <!-- cd-tab-filter -->
+    </div> <!-- cd-tab-filter-wrapper -->
+
+    <section class="cd-gallery">
+        <ul>
+            <li class="mix color-1 check1 radio2 option3"><img src="content-filter-master/img/img-1.jpg" alt="Image 1"></li>
+            <li class="mix color-2 check2 radio2 option2"><img src="content-filter-master/img/img-2.jpg" alt="Image 2"></li>
+            <li class="mix color-1 check3 radio3 option1"><img src="content-filter-master/img/img-3.jpg" alt="Image 3"></li>
+            <li class="mix color-1 check3 radio2 option4"><img src="content-filter-master/img/img-4.jpg" alt="Image 4"></li>
+            <li class="mix color-1 check1 radio3 option2"><img src="content-filter-master/img/img-5.jpg" alt="Image 5"></li>
+            <li class="mix color-2 check2 radio3 option3"><img src="content-filter-master/img/img-6.jpg" alt="Image 6"></li>
+            <li class="mix color-2 check2 radio2 option1"><img src="content-filter-master/img/img-7.jpg" alt="Image 7"></li>
+            <li class="mix color-1 check1 radio3 option4"><img src="content-filter-master/img/img-8.jpg" alt="Image 8"></li>
+            <li class="mix color-2 check1 radio2 option3"><img src="content-filter-master/img/img-9.jpg" alt="Image 9"></li>
+            <li class="mix color-1 check3 radio2 option4"><img src="content-filter-master/img/img-10.jpg" alt="Image 10"></li>
+            <li class="mix color-1 check3 radio3 option2"><img src="content-filter-master/img/img-11.jpg" alt="Image 11"></li>
+            <li class="mix color-2 check1 radio3 option1"><img src="content-filter-master/img/img-12.jpg" alt="Image 12"></li>
+            <li class="mix color-3 check3 radio2 option4"><img src="content-filter-master/img/img-10.jpg" alt="Image 10"></li>
+            <li class="mix color-3 check3 radio3 option2"><img src="content-filter-master/img/img-11.jpg" alt="Image 11"></li>
+            <li class="mix color-3 check1 radio3 option1"><img src="content-filter-master/img/img-12.jpg" alt="Image 12"></li>
+            <li class="gap"></li>
+            <li class="gap"></li>
+            <li class="gap"></li>
+        </ul>
+        <div class="cd-fail-message">No results found</div>
+    </section>
+</main>
 
 
 
@@ -769,6 +835,9 @@
         </div>
     </div>
 </footer>
+<script src="content-filter-master/js/jquery-2.1.1.js"></script>
+<script src="content-filter-master/js/jquery.mixitup.min.js"></script>
+<script src="content-filter-master/js/main.js"></script>
 
 
     <script src="js/onlineQuiz.js"></script>
