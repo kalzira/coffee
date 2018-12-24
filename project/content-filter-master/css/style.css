@@ -255,6 +255,7 @@ xgallery
 .cd-gallery {
   padding: 26px 5%;
   width: 100%;
+  text-align: center;
 }
 .cd-gallery li {
   margin-bottom: 1.6em;
