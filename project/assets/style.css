@@ -29,8 +29,9 @@
     height: 3.5rem;
     color: black;
 }
-.navbar-brand img{
-    height: 3.5rem;
+.navbar img{
+    width: 3.3%;
+    margin-right: .3%;
 }
 .navbar-brand{
     font-family: 'Satisfy', serif;
@@ -60,18 +61,59 @@ height: 100%;
 }
 
 
-.jumbotron{
-padding: 1rem;
-border-radius: 0;
-}
 #carouselka{
 float: left;
 }
-#FHQ{
-    margin-top: 27%;
-    display: inline-block;
-    min-height: 200px;
 
+#ImgJumbo{
+    margin-top: 4.05%;
+    margin-bottom: 1.09%;
+
+    background-color: #5C563B;
+}
+.Landing{
+    display: inline-block;
+    background-color: #5C563B;
+
+}
+.Landing img{
+    float: left;
+    width: 47%;
+
+}
+
+.FHQ{
+
+   /*display: inline-block;*/
+    float: right;
+    margin-right: 6%;
+
+    width: 100%;
+
+
+
+
+}
+.FHQ p{
+    margin-bottom: 9.7%;
+    text-align: left;
+    color: #ECECEC;
+    font-weight: 100;
+    font-size: 13px;
+
+}
+.FHQ .btn{
+    margin-bottom: 7%;
+    color:#ECECEC;
+    background-color: rgba(53,50,33, 0.5);
+    border: none;
+    width: 60%;
+    font-size: 15px;
+    font-family: 'Satisfy', serif;
+
+}
+.FHQ .btn:hover{
+    background-color: rgba(53,50,33, 0.9);
 }
 
 /*WELCOME*/
@@ -98,11 +140,41 @@ float: left;
 
 
 
-@media only screen and (max-width: 768px) {
-    #FHQ {
+@media only screen and (max-width: 800px) {
+    #ImgJumbo {
         display: none;
     }
+    #Landing{
+        margin-left: 2.5%;
+    }
+    .Landing{
+        background-color: #D74C34;
+    }
+    .Landing img{
+        width: 50%;
+    }
+
 }
+@media only screen and (max-width: 576px){
+    #ImgJumbo {
+        display: none;
+    }
+
+    .Landing #img1{
+        display: none;
+
+    }
+    .Landing img{
+        width: 100%;
+    }
+    #Landing{
+        background-color: #D74C34;
+    }
+
+
+}
+
+
 
 
 
@@ -183,7 +255,9 @@ float: left;
 width:100%;
 
 }
-
+.card-title{
+    display: none;
+}
 
 /*three column section*/
 #quizSect, #factsSect{
@@ -216,7 +290,7 @@ width:100%;
     padding: 12px 35px 12px 15px;
     display: inline-block;
     width: 100%;
-    background-color: rgb(92,27,25);
+    background-color: #87A87B;
     color: #ffffff;
     position: relative;
     text-decoration: none;
@@ -244,21 +318,33 @@ width:100%;
 /*Gallery*/
 #Gallery{
     margin-top:10%;
-    margin-bottom: 10%;
-    background-color: #87A87B;
+    margin-bottom: 2%;
+    background-color: rgb(245,245,245);
     padding: 2%;
+
+}
+
+.d-block:hover{
+    border: 5px solid rgba(41,136,155, 0.9);
+
+
+
 
 }
 #carouselExampleControls2 img{
     height: 85%;
+
 }
 #carouselExampleControls2{
     margin-top: 7%;
+
 }
 
-#Gallery h1{
+#galleryTitle, #infoTitle, #ConnectTitle{
     text-align: center;
-    margin-bottom: 4%;
+   margin-top: 5%;
+    font-weight: 200;
+    font-size: 50px;
 }
 #Gallery h2{
     text-align: center;
@@ -267,32 +353,34 @@ width:100%;
 
 }
 
-
+footer h2, h3{
+    font-weight: 100;
+}
 footer{
-    background-color: #950014;
-    color: white;
+    background-color: rgba(92,86,59, 0.9);
+    color: black;
     padding-top: 2rem;
 }
-hr.light{
-    border-top: 1px  solid white;
+hr.my-4{
+    border-top: 1px  solid black;
     width: 75%;
     margin-top: .8rem;
     margin-bottom: 1rem;
 
 }
 footer a{
-    color: white;
+    color: black;
 }
-hr.light-100{
-    border-top: 1px  solid white;
+hr.my-4-1{
+    border-top: 1px  solid black;
     width: 100%;
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
 .imgSocial{
     text-align: center;
-    width: 3%;
-    margin-right: 10%;
+    width: 2.5%;
+    margin-right: 5%;
     margin-left: 5%;
 }
 
